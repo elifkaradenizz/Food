@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,600&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+
+    font-size: 90%;
+}
+
+body {
+    background: #f4f3ef
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #000;
+}
+
+header .logo i {
+    padding-right: .5rem;
+    font-weight: bolder;
+    color: #e44a0d;
+}
+
+
+
+header .navbar a {
+    color: #000;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+header .navbar a:hover {
+    cursor: pointer;
+    color: #e44a0d;
+
+}
+
+#menu-bar {
+    font-size: 2rem;
+    border: .2rem solid black;
+    border-radius: .4rem;
+    padding: .8rem;
+    display: none;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.home .content h4 {
+    font-size: 3rem;
+}
+
+.home .content p {
+    font-size: 1.4rem;
+    margin-top: .4rem;
+    color: #898885;
+}
+
+.home .image {
+    flex: 1 1 40rem;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(3rem);
+    }
+}
+
+.home .image img {
+    width: 100%;
+}
+
+.content .btn {
+    display: inline-block;
+    color: #e44a0d;
+    border: .2rem solid #e44a0d;
+    border-radius: .4rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.content .btn:hover {
+
+    background-color: #e44a0d;
+    color: #fff;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    color: black
+}
+
+.heading span {
+    color: #e44a0d;
+}
+
+.speciality .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background-color: #ffffff;
+}
+
+.speciality .box-container .box {
+    flex: 1 1 25rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    cursor: pointer;
+
+
+}
+
+
+.speciality .box-container .box .image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+
+.speciality .box-container .box .img {
+
+    width: 20%;
+    height: 5rem;
+    margin-left: 1.4rem;
+    margin-top: .3rem;
+}
+
+
+.speciality .box-container .box .content {
+
+    text-align: center;
+    padding: 2rem;
+    margin-top: .2rem;
+}
+
+.speciality .box-container .box .content h3 {
+    color: #000;
+    font-size: 2rem;
+}
+
+.speciality .box-container .box .content p {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.speciality .box-container .box:hover .image {
+    top: 0;
+}
+
+.popular .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.popular .box-container .box {
+    flex: 1 1 25rem;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    text-align: center;
+    position: relative;
+}
+
+.popular .box-container .box img {
+    height: 25rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: .5rem;
+
+}
+
+
+
+.popular .box-container .box .btn {
+
+    display: inline-block;
+    color: #e44a0d;
+    border: .2rem solid #e44a0d;
+    border-radius: .4rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+
+}
+
+.popular .box-container .box .btn:hover {
+    background-color: #e44a0d;
+    color: #fff;
+
+}
+
+
+.popular .box-container .box .price {
+
+    position: absolute;
+    color: #fff;
+    background-color: #e44a0d;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    font-size: 2rem;
+
+}
+
+.popular .box-container .box h3 {
+
+    font-size: 1.5rem;
+    margin-top: .8rem;
+
+}
+
+.popular .box-container .box .stars {
+
+    font-size: 1.3rem;
+    color: gold;
+    margin-top: .3rem;
+
+}
+
+
+.portfolio {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+
+}
+
+.portfolio-item {
+    width: 30%;
+    height: 20rem;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.overlay {
+
+    width: 100%;
+    height: 100%;
+    background-color: #e44a0d;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.7;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+
+}
+
+.portfolio-item:hover .overlay {
+
+    top: 0;
+}
+
+.portfolio-item:hover img {
+
+    transform: scale(1.1);
+
+}
+
+.review .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+
+}
+
+.review .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    border: .5rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    flex: 1 1 25rem;
+    background: #e44a0d;
+    margin-top: 6rem;
+    object-fit: cover;
+}
+
+.review .box-container .box img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: .8rem solid #e44a0d;
+    margin-top: -8rem;
+}
+
+.review .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.review .box-container .box .stars {
+    margin-top: 1.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.review .box-container .box p {
+    margin-top: 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.order .row {
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-radius: .5rem;
+}
+
+.order .row .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.order .row .image {
+    flex: 1 1 30rem;
+}
+
+.order .row form {
+    flex: 1 1 50rem;
+    padding: 1rem;
+}
+
+.order .row form .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.order .row form .input-box input,
+.order .row form textarea {
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: #e44a0d;
+    text-transform: none;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .3rem;
+
+}
+
+.order .row form textarea {
+    width: 100%;
+    height: 10rem;
+    resize: none;
+
+}
+
+.order .row form .btn {
+    display: inline-block;
+    color: #e44a0d;
+    border: .2rem solid #e44a0d;
+    border-radius: .4rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+
+}
+
+.order .row form .btn:hover {
+
+    background-color: #e44a0d;
+    color: #fff;
+}
+
+.footer{
+    background-color: #000;
+    text-align: center;
+}
+
+.footer .socials {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.footer .socials a {
+    display: inline-block;
+    color: #e44a0d;
+    border: .2rem solid #e44a0d;
+    border-radius: .4rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+}
+
+
+.footer .socials a:hover {
+   
+    background-color: #e44a0d;
+    color: #fff;
+}
+
+.footer .credit {
+    padding: 2rem 1rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+
+@media(max-width:991px) {
+
+    html {
+
+        font-size: 75%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+
+
+}
+
+
+@media(max-width:768px) {
+
+    #menu-bar {
+
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #f7f7f7;
+        border-top: 1rem;
+        display: none;
+
+    }
+
+    header .navbar.active {
+        display: block;
+    }
+
+    header .navbar a {
+        display: block;
+        padding: 1rem;
+        font-size: 2rem;
+        background: #e44a0d;
+        box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .1);
+    }
+
+    .order .row form .input-box input,
+    .order .row form textarea {
+        width: 100%;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .portfolio .portfolio-item {
+        flex-basis: 50%;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 580px) {
+
+    .portfolio .portfolio-item {
+        flex-basis: 100%;
+    }
+
+}
